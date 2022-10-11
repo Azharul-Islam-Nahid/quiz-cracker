@@ -1,6 +1,36 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* This project was bootstrapped with Bootstrap cdn.
+
+* This is a quiz related web application.
+
+* Fully responsive site for larger device and mobile.
+
+* React-router-dom is used for single page routing.
+
+* All data are loaded from custom API.
+
+* Quiz answers are checked and given toast feedback. 
+
+* Error page handled. 
+
+
+
+* API used :
+
+
+
+* Get all quiz topics: https://openapi.programming-hero.com/api/quiz
+
+
+* Get topic details by topic id: https://openapi.programming-hero.com/api/quiz/${id}
+
+
+* Example: https://openapi.programming-hero.com/api/quiz/1
+
+
+
+
 
 ## Available Scripts
 

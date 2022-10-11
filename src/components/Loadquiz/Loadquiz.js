@@ -18,8 +18,8 @@ const Loadquiz = ({ quizQuestion }) => {
         answer()
     }
 
-    const answerChecker = quizQuestion => {
-        if (quizQuestion === correctAnswer) {
+    const answerChecker = answer => {
+        if (answer === correctAnswer) {
 
             correct();
         }
