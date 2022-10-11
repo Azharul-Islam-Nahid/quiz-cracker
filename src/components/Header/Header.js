@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComment } from '@fortawesome/free-solid-svg-icons'
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -14,13 +14,13 @@ const Header = () => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <NavLink to='/' className="nav-link active text-light" aria-current="page">Topics</NavLink>
+                            <Link to='/' className="nav-link active text-light" aria-current="page">Topics</Link>
                         </li>
                         <li className="nav-item">
-                            <NavLink to='/statistics' className="nav-link active text-light" aria-current="page">Quiz Statistics</NavLink>
+                            <Link to='/statistics' className="nav-link active text-light" aria-current="page">Quiz Statistics</Link>
                         </li>
                         <li className="nav-item">
-                            <NavLink to='/blog' className="nav-link active text-light" aria-current="page">Blog</NavLink>
+                            <Link to='/blog' className="nav-link active text-light" aria-current="page">Blog</Link>
                         </li>
                     </ul>
                 </div>
