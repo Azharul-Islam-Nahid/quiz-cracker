@@ -5,7 +5,7 @@ const Statistics = () => {
     const { data } = useLoaderData();
     const userDatas = data;
     return (
-        <div className='container-fluid'>
+        <div className='container-fluid mt-5'>
             <h2 className='text-center'>Quiz statistics</h2>
 
             <ResponsiveContainer width="100%" height={300} className='mt-5'>

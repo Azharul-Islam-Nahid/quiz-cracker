@@ -10,9 +10,9 @@ const Loadquiz = ({ quizQuestion }) => {
     const refinedQ = htmlDel.replace(/(<([^>]+)>)/ig, '');
 
 
-    const correct = () => toast("Correct answer");
-    const wrong = () => toast("Wrong answer");
-    const answer = () => toast(correctAnswer);
+    const correct = () => toast.success("Correct answer", { position: 'top-center', theme: 'light' });
+    const wrong = () => toast.error("Wrong answer", { position: 'top-center', theme: 'light' });
+    const answer = () => toast.info(correctAnswer, { position: 'top-center', theme: 'colored' });
 
     const showAnswer = () => {
         answer()

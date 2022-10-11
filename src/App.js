@@ -3,6 +3,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 import Blog from './components/Blog/Blog';
+import Errorpage from './components/Errorpage/Errorpage';
 import Home from './components/Home/Home';
 import QuizTopics from './components/QuizTopics/QuizTopics';
 import Statistics from './components/Statistics/Statistics';
@@ -36,6 +37,11 @@ function App() {
           element: <Blog></Blog>
         }
       ]
+
+    },
+    {
+      path: '*',
+      element: <Errorpage></Errorpage>
     }
   ]);
   return (
