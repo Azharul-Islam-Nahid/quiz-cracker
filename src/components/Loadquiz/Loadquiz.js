@@ -1,22 +1,36 @@
+import { faEye } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { toast } from 'react-toastify';
 import './Loadquiz.css';
 
 const Loadquiz = ({ quizQuestion }) => {
+
+    const correct = () => toast("Correct answer");
+    const wrong = () => toast("Wrong answer");
+    const answer = () => toast(correctAnswer);
+
     // console.log(quizQuestion);
     const { question, options, correctAnswer } = quizQuestion;
 
+    const showAnswer = () => {
+        answer()
+    }
+
     const answerChecker = quizQuestion => {
         if (quizQuestion === correctAnswer) {
-            alert('Your ans is correct')
+
+            correct();
         }
         else {
-            alert('wrong answer')
+            wrong();
         }
     };
     return (
         <div className="container mt-sm-5 my-1">
+            <button onClick={() => showAnswer()} className='eye-button'><FontAwesomeIcon icon={faEye}></FontAwesomeIcon></button>
             <div className="question ml-sm-5 pl-sm-5 pt-2">
-                <div className="py-2 h5"><b>Q No.{question}</b></div>
+                <div className="py-2 h5"><b><small></small>Q No.{question}</b> </div>
                 <div className="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3" id="options">
                     <label onClick={() => answerChecker(quizQuestion.options[0])} className="options"> {options[0]}
                         <input type="radio" name="radio" />

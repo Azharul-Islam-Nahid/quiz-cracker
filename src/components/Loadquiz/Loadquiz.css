@@ -20,6 +20,13 @@
     font-size: 32px;
 }
 
+.eye-button {
+    color: whitesmoke;
+    margin-left: 39rem;
+    background: none;
+    border: 0;
+}
+
 .question {
     width: 75%;
 }
@@ -98,5 +105,9 @@
     .question {
         width: 100%;
         word-spacing: 2px;
+    }
+
+    .eye-button {
+        margin-left: 25rem;
     }
 }
