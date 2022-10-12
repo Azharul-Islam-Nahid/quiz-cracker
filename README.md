@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+* Project name: Coders Quiz. 
+
 * This project was bootstrapped with Bootstrap cdn.
 
 * This is a quiz related web application.

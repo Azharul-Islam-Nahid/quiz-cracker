@@ -5,6 +5,8 @@ import Loadquiz from '../Loadquiz/Loadquiz';
 const QuizTopics = () => {
     const quiz = useLoaderData();
     const quizQuestions = quiz.data.questions;
+    console.log(quizQuestions);
+
     return (
         <div className='container-fluid mt-5'>
             <div className="card-group">
