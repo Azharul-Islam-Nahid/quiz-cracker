@@ -4,7 +4,7 @@ const Blog = () => {
     return (
         <section className="container-fluid mt-5 text-center">
             <h1>Some question answer blog about React</h1>
-            <div className="container-fluid mt-4 text-center">
+            <div className="container-fluid mt-4 mb-5 text-center">
                 <h4>1.What is the purpose of react router?</h4>
 
                 <p>React Router is a standard library for routing in React. It enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL.

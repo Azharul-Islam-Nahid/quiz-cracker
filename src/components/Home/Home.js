@@ -16,6 +16,7 @@ const Home = () => {
                 </div>
             </div>
 
+            <h3 className='text-center mt-5 mb-5'>Quiz Topics</h3>
             <div className='m-auto mb-5 row col-10 row-cols-8 row-cols-lg-4 g-4'>
                 {
                     userDatas.map(userData => <Quizzes

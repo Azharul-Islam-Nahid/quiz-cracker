@@ -8,7 +8,7 @@ const Statistics = () => {
         <div className='container-fluid mt-5'>
             <h2 className='text-center'>Quiz statistics</h2>
 
-            <ResponsiveContainer width="100%" height={300} className='mt-5'>
+            <ResponsiveContainer width="90%" height={300} className='mt-5'>
                 <BarChart
                     width={500}
                     height={300}
